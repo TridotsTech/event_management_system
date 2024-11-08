@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-08 14:58:38.252534",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "start_time",
+  "end_time",
+  "column_break_bumq",
+  "agenda_data",
+  "section_break_fssz",
+  "agenda",
+  "add_agenda"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "HTML",
+   "label": "Agenda"
+  },
+  {
+   "fieldname": "agenda_data",
+   "fieldtype": "JSON",
+   "hidden": 1,
+   "label": "Agenda Data"
+  },
+  {
+   "fieldname": "add_agenda",
+   "fieldtype": "Button",
+   "label": "Add Agenda"
+  },
+  {
+   "fieldname": "column_break_bumq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fssz",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-08 16:10:15.809591",
+ "modified_by": "Administrator",
+ "module": "Event Management System",
+ "name": "Event Schedule",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,1 @@
+{{doc.full_name}}, you have successfully registered for {{doc.event_name}}!

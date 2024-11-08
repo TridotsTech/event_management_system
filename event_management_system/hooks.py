@@ -242,3 +242,11 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "doctype":"Role", 
+        "filters":{
+            "name":["in", ["Event Admin", "Event Organizer", "Event Attendee"]]
+        }
+    }
+]

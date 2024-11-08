@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2024-11-08 16:13:00.995828",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Event Registration",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{{doc.full_name}}, you have successfully registered for {{doc.event_name}}!",
+ "message_type": "Markdown",
+ "modified": "2024-11-08 17:12:27.101712",
+ "modified_by": "Administrator",
+ "module": "Event Management System",
+ "name": "Event Registration",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.full_name}}, you have successfully registered for {{doc.event_name}}!"
+}

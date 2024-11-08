@@ -1,0 +1,61 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"k94cUKYpxz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Event Management System</span>\",\"col\":12}},{\"id\":\"N2Cq5PSet_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event\",\"col\":3}},{\"id\":\"LL7PIKXhrT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event Registration\",\"col\":3}},{\"id\":\"296oZQZvs9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event Feedback\",\"col\":3}},{\"id\":\"473bjRwOc8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"GHdet31UEA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Average Event Rating\",\"col\":3}}]",
+ "creation": "2024-11-08 14:14:07.690925",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "calendar",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Event Management System",
+ "links": [],
+ "modified": "2024-11-08 16:31:08.526059",
+ "modified_by": "Administrator",
+ "module": "Event Management System",
+ "name": "Event Management System",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Event",
+   "link_to": "Public Event",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Average Event Rating",
+   "link_to": "Average Event Rating",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Event Registration",
+   "link_to": "Event Registration",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Event Feedback",
+   "link_to": "Event Feedback",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Event Management System"
+}

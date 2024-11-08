@@ -1,0 +1,41 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": "/app",
+  "is_custom": 0,
+  "modified": "2024-11-08 14:16:26.718454",
+  "name": "Event Admin",
+  "restrict_to_domain": null,
+  "role_name": "Event Admin",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": "/app",
+  "is_custom": 0,
+  "modified": "2024-11-08 14:16:46.138735",
+  "name": "Event Organizer",
+  "restrict_to_domain": null,
+  "role_name": "Event Organizer",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2024-11-08 14:16:59.146485",
+  "name": "Event Attendee",
+  "restrict_to_domain": null,
+  "role_name": "Event Attendee",
+  "two_factor_auth": 0
+ }
+]

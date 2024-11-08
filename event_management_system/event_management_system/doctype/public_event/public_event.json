@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{event_name}-{DD}{MM}{YY}",
+ "creation": "2024-11-08 14:32:41.939367",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hlcv",
+  "event_name",
+  "description",
+  "location",
+  "column_break_nfkm",
+  "amended_from",
+  "category",
+  "status",
+  "paid_event",
+  "entry_fee",
+  "accepted_modes_of_payment",
+  "section_break_skec",
+  "event_schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hlcv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Public Event",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "In Person\nOnline"
+  },
+  {
+   "fieldname": "column_break_nfkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nClosed\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "section_break_skec",
+   "fieldtype": "Section Break",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "paid_event",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Paid Event"
+  },
+  {
+   "depends_on": "eval:doc.paid_event;",
+   "fieldname": "entry_fee",
+   "fieldtype": "Currency",
+   "label": "Entry Fee",
+   "mandatory_depends_on": "eval:doc.paid_event;",
+   "precision": "2"
+  },
+  {
+   "fieldname": "event_schedule",
+   "fieldtype": "Table",
+   "label": "Event Schedule",
+   "options": "Event Schedule"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location"
+  },
+  {
+   "depends_on": "eval:doc.paid_event;",
+   "fieldname": "accepted_modes_of_payment",
+   "fieldtype": "Table MultiSelect",
+   "label": "Accepted Modes of Payment",
+   "mandatory_depends_on": "eval:doc.paid_event;",
+   "options": "Mode of Payment Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Event Registration",
+   "link_fieldname": "event"
+  },
+  {
+   "link_doctype": "Event Feedback",
+   "link_fieldname": "event"
+  }
+ ],
+ "modified": "2024-11-08 16:05:20.533354",
+ "modified_by": "Administrator",
+ "module": "Event Management System",
+ "name": "Public Event",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Admin",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Event Attendee",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Organizer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "event_name,description,location",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
